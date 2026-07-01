@@ -107,12 +107,12 @@ the entity with the given id in the `save_poll_rating_to` argument.
 #### Responses
 
 Upon successful upvote:
-```json
+```js
 { ok: true, data: { num_upvotes: Int!, num_downvotes: Int! } }
 ```
 
 Upon failed validation of the request params:
-```json
+```js
 {
   ok: false,
   why: String,
@@ -121,7 +121,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```json
+```js
 { ok: false, why: String, details?: { what: String? } }
 ```
 
@@ -160,12 +160,12 @@ the entity with the given id in the `save_poll_rating_to` argument.
 #### Responses
 
 Upon successful downvote:
-```json
+```js
 { status: "success", data: { num_upvotes: Int!, num_downvotes: Int! } }
 ```
 
 Upon failed validation of the request params:
-```json
+```js
 {
   ok: false,
   why: String,
@@ -174,7 +174,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```json
+```js
 { ok: false, why: String, details?: { what: String? } }
 ```
 
@@ -197,7 +197,7 @@ On success, the poll data is returned.
 #### Responses
 
 Upon success:
-```json
+```js
 {
   status: "success",
   
@@ -213,7 +213,7 @@ Upon success:
 ```
 
 Upon failed validation of the request params:
-```json
+```js
 {
   ok: false,
   why: String,
@@ -237,7 +237,7 @@ the given ID does not exist.
 
 #### Responses
 Upon success:
-```json
+```js
 {
   status: "success",
   
@@ -253,7 +253,7 @@ Upon success:
 ```
 
 Upon failed validation of the request params:
-```json
+```js
 {
   ok: false,
   why: String,
@@ -262,7 +262,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```json
+```js
 { ok: false, why: String, details?: { what: String? } }
 ```
 
