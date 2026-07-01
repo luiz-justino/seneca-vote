@@ -12,13 +12,13 @@
 
 ## Install
 
-```
+```sh
 npm install @seneca/vote
 ```
 
 ## Quick Example
 
-```
+```js
 require('seneca')()
   .use('@seneca/vote')
 ```
@@ -49,7 +49,7 @@ can be used:
 - seneca-promisify
 
 Normally, your code would look like this:
-```
+```js
 const Seneca = require('seneca')
 const Entities = require('seneca-entity')
 const SenecaPromisify = require('seneca-promisify')
@@ -107,12 +107,12 @@ the entity with the given id in the `save_poll_rating_to` argument.
 #### Responses
 
 Upon successful upvote:
-```
+```json
 { ok: true, data: { num_upvotes: Int!, num_downvotes: Int! } }
 ```
 
 Upon failed validation of the request params:
-```
+```json
 {
   ok: false,
   why: String,
@@ -121,7 +121,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```
+```json
 { ok: false, why: String, details?: { what: String? } }
 ```
 
@@ -161,12 +161,12 @@ the entity with the given id in the `save_poll_rating_to` argument.
 #### Responses
 
 Upon successful downvote:
-```
+```json
 { status: "success", data: { num_upvotes: Int!, num_downvotes: Int! } }
 ```
 
 Upon failed validation of the request params:
-```
+```json
 {
   ok: false,
   why: String,
@@ -175,7 +175,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```
+```json
 { ok: false, why: String, details?: { what: String? } }
 ```
 
@@ -199,7 +199,7 @@ On success, the poll data is returned.
 #### Responses
 
 Upon success:
-```
+```json
 {
   status: "success",
   
@@ -215,7 +215,7 @@ Upon success:
 ```
 
 Upon failed validation of the request params:
-```
+```json
 {
   ok: false,
   why: String,
@@ -239,7 +239,7 @@ the given ID does not exist.
 
 #### Responses
 Upon success:
-```
+```json
 {
   status: "success",
   
@@ -255,7 +255,7 @@ Upon success:
 ```
 
 Upon failed validation of the request params:
-```
+```json
 {
   ok: false,
   why: String,
@@ -264,7 +264,7 @@ Upon failed validation of the request params:
 ```
 
 When the poll does not exist:
-```
+```json
 { ok: false, why: String, details?: { what: String? } }
 ```
 
@@ -272,7 +272,7 @@ When the poll does not exist:
 `dependents` - By default, this option is not set. An example of the set option  
 would look like this:
 
-```
+```js
 seneca.use(SenecaVote, { 
   dependents: {
     'red': {      // <-- this value represents a `kind` of a vote
@@ -325,7 +325,7 @@ The [Senecajs org](https://github.com/senecajs/) encourages open participation. 
 
 ### Running tests
 
-```
+```sh
 npm run test
 ```
 
