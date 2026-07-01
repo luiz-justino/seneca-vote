@@ -148,7 +148,6 @@ The type of the voter. Currently only "sys/user" is supported.
 Specifies the entity name and the id to denormalize the new poll rating to. Used  
 in tandem with the `dependents` plugin option.
 
-
 #### Description
 
 Creates an downvote for a poll. If the voter has already upvoted on the poll,  
@@ -178,7 +177,6 @@ When the poll does not exist:
 ```json
 { ok: false, why: String, details?: { what: String? } }
 ```
-
 
 ### Open Poll Action
 
