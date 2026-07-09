@@ -6,6 +6,13 @@
 [![npm version](https://img.shields.io/npm/v/@seneca/vote.svg)](https://npmjs.com/package/@seneca/vote)
 [![build](https://github.com/senecajs/seneca-vote/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-vote/actions/workflows/build.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-vote/badge.svg)](https://snyk.io/test/github/senecajs/seneca-vote)
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
+
+## Contents:  
+- [Requirements](#requirements)
+- [Message Handlers](#message-handlers)
+- [Dev Scripts](#dev-scripts)
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
